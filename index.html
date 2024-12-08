@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livestream</title>
+    <meta name="keywords" content="m3u8 player, hls player, m3u8, hls">
+<meta name="description" content="This page permits you to play M3U8/HLS streams online with no establishment required.">
+   <link rel="stylesheet" href="./content/css/style.css" />
+   <link rel="stylesheet" href="./content/css/player.css" />
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed&display=swap" rel="stylesheet">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+   <script src="//content.jwplatform.com/libraries/Jq6HIbgz.js"></script>
+    
+</head>
+<body>
+<div class="names bg-danger ">
+    <p>Max Live Stream</p>
+</div>
+
+
+
+<div class="containers">
+
+        <div class="brand">
+         <a href="./index.html"  ><img  src="./content/img/play.png" alt="logo" > </a>
+            <span>Livestream</span>
+            <p>Play Video & Live Stream Now</p>
+        </div>
+
+        <div class="social">
+            <a class="gh-button" href="github.com/maxmentor"><span class="gh-button__icon"></span>GitHub</a>
+            <a class="gh-button" href="t.me/maxmentor"><span class="button__icon"></span>Telegram</a>
+           
+        </div>
+    </div>
+
+<div class="play">
+
+    <div class="stream">
+<div class="text">
+    
+    <input type="url" id="link"  placeholder="Paste  m3u8, mp4, mkv, mov, ogg, webm, mp3 url here" />
+    <button rel="stream" id="clicknetflix" >Play</button>
+
+  
+</div>
+<div class="container">
+<div id="container">
+
+</div></div>
+</div></div>
+
+<br>
+
+<div class="info">
+    <h5 class="text-danger">Supported Formats</h5>
+    <p>Player Support this formats<em> m3u8, mp4, mkv, mov, ogg, webm, mp3</em></p>
+</div>
+<hr>
+<div class="info">
+    <h5 class="text-danger">What is HLS?</h5>
+    <p>HLS represents HTTP Live Streaming. It's a HTTP-based media streaming correspondences convention carried out by Apple Inc. It works by breaking the general stream into a grouping of little document downloads, each download stacking one short piece of a by and large possibly unbounded vehicle stream.
+
+        HLS streams are normally portrayed utilizing M3U8 playlist.</p>
+</div>
+<hr>
+<div class="info">
+    <h5 class="text-danger">Browser Compatibility</h5>
+    <p>Most desktop and mobile browsers are supported. However, CORS must be enabled on the streaming server, otherwise it may not play.</em></p>
+</div>
+
+
+
+
+
+<div class="footer">
+    <div class="copyright">
+  <p>  © 2023 - 2024 <a href="./index.html" >LiveStream </a></p>
+</div>
+  
+  <div class="visitor">
+    <a href="https://www.freecounterstat.com" title="free counters"><img src="https://counter10.optistats.ovh/private/freecounterstat.php?c=k6bdldjr4k7b1afm54m4n8ezqgkggb3l" border="0" title="free counters" alt="free counters"></a>
+
+</div>
+</div>
+
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script>
+
+       
+
+$(document).ready(function(){
+    
+
+    $("#clicknetflix").click(function(){
+   
+window.location.href = 'play.html?max='+$('#link').val();
+    });
+});
+
+
+
+
+     
+
+            </script>
+
+</body>
+</html>
