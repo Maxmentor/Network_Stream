@@ -39,8 +39,18 @@
             }
         }
     </style>
+
+
+
+
+
     <video id="myElement"></video>
     <script type="text/javascript">
+
+    var urlParams = new URLSearchParams(window.location.search);
+      var maxvalue=urlParams.get('max');
+
+
         document.addEventListener('DOMContentLoaded', () => {
             const playerConfig = {
                 title: 'Demo',
@@ -53,7 +63,7 @@
                 width: '100%',
                 mute: false,
                 autostart: true,
-                file: "http://410206068783.d4ktv.info:8080/live/5c:c1:d7:13:57:6e/ezx2qkwf9d/277101.m3u8",
+                file:  maxvalue,
                 type: "hls",
                 captions: {
                     color: '#fff',
@@ -63,6 +73,10 @@
             };
             const player = jwplayer("myElement").setup(playerConfig);
         });
+
+    
+
+
     </script>
 </body>
 
