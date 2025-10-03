@@ -1,1 +1,20 @@
+<script>
+    var urlParams = new URLSearchParams(window.location.search);
+      var maxvalue=urlParams.get('max');
 
+</script>
+
+
+<link rel="stylesheet" href="//cdn.flowplayer.com/releases/native/edge/style/flowplayer.css">
+<script src="//cdn.flowplayer.com/releases/native/edge/flowplayer.min.js"></script>
+
+<div id="player"></div>
+
+<script>
+flowplayer('#player', {
+  src: {
+    type: 'video/mp4',
+    src: maxvalue,
+  }
+})
+  </script>
