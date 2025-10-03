@@ -1,10 +1,26 @@
 
 
 
-<link rel="stylesheet" href="//cdn.flowplayer.com/releases/native/edge/style/flowplayer.css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Max Network stream</title>
+</head>
+<body>
+
+
+    <link rel="stylesheet" href="//cdn.flowplayer.com/releases/native/edge/style/flowplayer.css">
 <script src="//cdn.flowplayer.com/releases/native/edge/flowplayer.min.js"></script>
+
+
+
+<div id="player"></div>
+
+
 <script>
-    var urlParams = new URLSearchParams(window.location.search);
+     var urlParams = new URLSearchParams(window.location.search);
       var maxvalue=urlParams.get('max');
     
 flowplayer('#player', {
@@ -16,6 +32,7 @@ flowplayer('#player', {
   </script>
 
 
-<div id="player"></div>
 
-
+    
+</body>
+</html>
