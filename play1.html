@@ -10,6 +10,11 @@
      <link rel="stylesheet" href="//cdn.flowplayer.com/releases/native/edge/style/flowplayer.css">
 <script src="//cdn.flowplayer.com/releases/native/edge/flowplayer.min.js"></script>
 
+
+    <script>
+         var urlParams = new URLSearchParams(window.location.search);
+      var maxvalue=urlParams.get('max');
+    </script>
 </head>
 <body>
 
@@ -21,11 +26,6 @@
 
 <script>
     
-
-      var urlParams = new URLSearchParams(window.location.search);
-      var maxvalue=urlParams.get('max');
-
-
 flowplayer('#player', {
   src: {
     type: 'video/mp4',
