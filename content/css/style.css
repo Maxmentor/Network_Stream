@@ -30,7 +30,7 @@ body {
     padding-top: 1.5rem;
 }
 .containers .brand img {
-width: 150px;
+width: 150px !important;
 margin: 1rem;
 top: 2rem;
 position: absolute;
@@ -301,5 +301,6 @@ input {
                }
             }
           
+
 
 
