@@ -30,11 +30,12 @@ body {
     padding-top: 1.5rem;
 }
 .containers .brand img {
-width: 3.2rem;
+width: 150px;
 margin: 1rem;
 top: 2rem;
 position: absolute;
 cursor: pointer;
+
 }
 
 .containers .brand span{
@@ -260,7 +261,7 @@ input {
 
 #container {
     width:100% !important;
-    height: 200px !important;
+    height:10px !important;
 }
 
 
