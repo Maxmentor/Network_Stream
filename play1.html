@@ -7,32 +7,99 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Max Network stream</title>
-     <link rel="stylesheet" href="//cdn.flowplayer.com/releases/native/edge/style/flowplayer.css">
-<script src="https://cdn.flowplayer.com/releases/native/edge/flowplayer.min.js"></script>
+
+<style>
+    body, html {width: 100%; height: 100%; margin: 0; padding: 0; background: #fff;} #plays p {color: black;}
+
+ .videocontent {
+	width:80%;
+	max-width: 640px;
+	margin: 0 auto;
+}
+object {
+position:absolute;
+top:0px;
+left:0px;}
+</style>
 
 
-    <script>
-         var urlParams = new URLSearchParams(window.location.search);
-      var maxvalue=urlParams.get('max');
-    </script>
 </head>
 <body>
 
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Page Title</title>
+	</head>
+	<body>
 
+   
+<!-- JW8 !-->
+<link rel="preload" as="script" href="https://donugdee.com/static/players/8.30.1/jwplayer.js">
+<link rel="preload" as="script" href="https://donugdee.com/static/players/8.30.1/jwplayer.core.controls.js">
+<link rel="preload" as="script" href="https://donugdee.com/static/players/8.30.1/vast.js">
+<script src="https://donugdee.com/static/players/8.30.1/jwplayer.js"></script>
+<script src="https://donugdee.com/static/players/8.30.1/jwplayer.core.controls.js"></script>
+<script src="https://donugdee.com/static/players/8.30.1/vast.js"></script>
+
+
+<script src="https://content.jwplatform.com/libraries/XeGdlzmk.js"></script>
+<script type="text/javascript">jwplayer.key = "Rj7tDuYSCqZdNKNAqsjWoMDBdHhp1THggDFOUhr0Zj8=";</script>
+<script type="text/javascript">jwplayer.key = "eNFaXCjyURVoCCGiHp7HTQ3hDhE/AfL0g8VE1fRbL84=";</script>
+
+
+
+<div id="plays" style="height:200px!important;margin-top: 25%; text-align: center; font-family: arial,sans-serif; font-size: 18px; color: #ffff; text-shadow: 0 1px 1px #000;">....</div>
+<script type="text/javascript">
+playerInstance = jwplayer("plays");
+playerInstance.setup({width: "100%",aspectratio: "16:9",
+                  'playlist.position': 'right',
+                  'playlist.size': '250',
+                  'playlist': [ 
+                       {file:maxvalue,label:"Auto","default": "true",type:"video/mp4",image:""},{file:"",label:"480p",type:"video/mp4"},{file:"",label:"720p",type:"video/mp4"}],stretching:"",
+     advertising: { 
+        client: "vast",
+            schedule:{
+                adbreak: {
+                offset: "pre",
+                tag: "https://github.com/InteractiveAdvertisingBureau/VAST_Samples/raw/master/VAST%204.0%20Samples/Video_Clicks_and_click_tracking-Inline-test.xml"
+                }
+            },
+                skiptext: "ข้าม",
+                skipmessage: "ข้ามวีดีโอนี้ใน  XX",
+                admessage: "วีดีโอสิ้นสุดใน XX ."
+     }
+});
+
+
+
+    /assets/file.xml
+
+https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_30mb.mp4
+
+JW8
+https://content.jwplatform.com/libraries/lqsWlr4Z.js
+https://content.jwplatform.com/libraries/Jq6HIbgz.js
+https://content.jwplatform.com/libraries/IDzF9Zmk.js
+
+JW7
+https://content.jwplatform.com/libraries/z3exF2NE.js
+
+<script></script>
+		</script>
+ 
+	</body>
+</html>
    
 
 <div id="flowplayer"></div>
 
 
 <script>
-    
-flowplayer('#flowplayer', {
-  src: {
-    type: 'video/mp4',
-    src: maxvalue,
-  }
-})
-  </script>
+         var urlParams = new URLSearchParams(window.location.search);
+         var maxvalue=urlParams.get('max');
+
+ </script>
 
 
 
