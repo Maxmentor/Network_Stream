@@ -2,9 +2,14 @@
     html,body{padding:0;margin:0;height:100%}
 #player{width:100%;height:100%;overflow:hidden;background-color:#000}
 
-    .player{
-         rotate: 90deg !important;
-    }
+   video{ position: absolute;
+    transform: rotate(90deg);
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    visibility: visible;}
+
+    
 </style>
 
 <script src="https://ssl.p.jwpcdn.com/player/v/8.22.0/jwplayer.js"></script>
@@ -40,4 +45,5 @@
     primary: "html5"
   });
 </script>
+
 
